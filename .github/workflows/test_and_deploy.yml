@@ -4,4 +4,4 @@ jobs:
     Test:
         runs-on: ubuntu-latest
         steps:
-            - run: echo "test GHA"
+            - run: make tests
