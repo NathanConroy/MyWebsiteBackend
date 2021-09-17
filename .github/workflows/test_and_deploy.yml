@@ -1,8 +1,7 @@
-
 name: Test and Deploy
 on: [push]
 jobs:
     Test:
-    runs-on: ubuntu-latest
-    steps:
-        - run: echo "test GHA"
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo "test GHA"
