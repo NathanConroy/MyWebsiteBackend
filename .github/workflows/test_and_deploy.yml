@@ -1,7 +1,13 @@
 name: Test and Deploy
+
 on: [push]
+
 jobs:
-    Test:
-        runs-on: ubuntu-latest
-        steps:
-            - run: make tests
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+      - run: make tests
