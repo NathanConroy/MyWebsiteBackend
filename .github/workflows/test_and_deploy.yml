@@ -11,4 +11,4 @@ jobs:
         with:
           python-version: '3.9'
       - run: make dev
-      - run: pytest
+      - run: make tests

@@ -7,7 +7,7 @@ dev:
 	pip install -r requirements.txt --upgrade
 
 tests:
-	pytest
+	python -m pytest
 
 prod: tests
 	git commit -a
