@@ -9,6 +9,6 @@ dev:
 tests:
 	pytest
 
-prod:
+prod: tests
 	git commit -a
 	git push origin main
