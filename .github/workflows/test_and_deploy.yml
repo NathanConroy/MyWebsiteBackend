@@ -3,7 +3,7 @@ name: Test and Deploy
 on: [push]
 
 jobs:
-  test:
+  test-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
@@ -16,3 +16,5 @@ jobs:
         run: make dev
       - name: Run Tests
         run: make tests
+      - name: Deploy
+        run: SERV_PW=${{ secrets.SERV_PW }} SERV_API_TOKEN=${{ SERV_API_TOKEN }} make deploy

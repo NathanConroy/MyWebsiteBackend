@@ -12,3 +12,6 @@ tests:
 prod: tests
 	git commit -a
 	git push origin main
+
+deploy:
+	source deploy.sh
