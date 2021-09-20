@@ -3,5 +3,5 @@
 
 echo "SSHing to PythonAnywhere."
 sshpass -p $SERV_PW ssh -o "StrictHostKeyChecking no" nathanconroydev@ssh.pythonanywhere.com << EOF
-    API_TOKEN=$SERV_API_TOKEN ./rebuild.sh
+    cd /home/nathanconroydev/MyWebsiteBackend; API_TOKEN=$SERV_API_TOKEN ./rebuild.sh
 EOF

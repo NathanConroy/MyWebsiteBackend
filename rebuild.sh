@@ -2,8 +2,6 @@
 # This runs on the production server: fetches new code,
 # Installs needed packages, and restarts the server.
 
-cd /home/nathanconroydev/MyWebsiteBackend
-
 echo "Rebuilding in $PWD ..."
 touch rebuild
 
