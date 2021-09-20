@@ -10,6 +10,7 @@ from flask import Flask
 
 
 TEST_ROUTE = '/test'
+POSTS_ROUTE = '/posts'
 
 
 app = Flask(__name__)
@@ -25,3 +26,11 @@ class Test(Resource):
     def get(self):
         return http_client.OK
 
+
+@api.route(POSTS_ROUTE)
+class Posts(Resource):
+    """
+    Responds with all the blog's posts.
+    """
+    def get(self):
+        return http_client.OK
