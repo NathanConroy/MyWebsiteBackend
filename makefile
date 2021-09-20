@@ -14,4 +14,4 @@ prod: tests
 	git push origin main
 
 deploy:
-	source deploy.sh
+	sh deploy.sh
