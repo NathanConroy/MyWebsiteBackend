@@ -3,8 +3,9 @@ Fetches Blog posts.
 """
 
 import pathlib
+import yaml
 
-NAME = 'name'
+TITLE = 'TITLE'
 FILES_DIR = './posts/files'
 
 
@@ -17,4 +18,6 @@ def fetch():
 
 
 def _parse_file(file: pathlib.Path):
-    return {NAME: file.name}
+    return yaml.safe_load(
+        file.read_text()
+    )
