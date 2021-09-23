@@ -21,3 +21,6 @@ def _parse_file(file: pathlib.Path):
     return yaml.safe_load(
         file.read_text()
     )
+
+if __name__ == '__main__':
+    print(fetch())
