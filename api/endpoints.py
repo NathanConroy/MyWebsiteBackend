@@ -8,6 +8,8 @@ import http.client as http_client
 from flask_restx import Resource, Api
 from flask import Flask
 
+from posts.fetch import fetch
+
 
 TEST_ROUTE = '/test'
 POSTS_ROUTE = '/posts'
@@ -33,4 +35,4 @@ class Posts(Resource):
     Responds with all the blog's posts.
     """
     def get(self):
-        return http_client.OK
+        return fetch()
