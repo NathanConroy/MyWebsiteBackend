@@ -6,6 +6,7 @@ This module contains all the server's endpoints.
 import http.client as http_client
 
 from flask_restx import Resource, Api
+from flask_cors import CORS
 from flask import Flask
 
 from posts.fetch import fetch
@@ -16,6 +17,7 @@ POSTS_ROUTE = '/posts'
 
 
 app = Flask(__name__)
+CORS(app)
 api = Api(app)
 
 

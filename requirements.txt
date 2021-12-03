@@ -1,4 +1,5 @@
 flask==1.1.4
 flask-restx
+flask-cors
 pytest
 pyyaml
