@@ -18,11 +18,9 @@ def fetch():
 
 
 def _parse_file(file: pathlib.Path):
-    d = yaml.safe_load(
+    return yaml.safe_load(
         file.read_text()
     )
-    print(d)
-    return d
 
 if __name__ == '__main__':
     print(fetch())
