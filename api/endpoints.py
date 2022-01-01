@@ -14,6 +14,7 @@ from posts.fetch import fetch
 
 TEST_ROUTE = '/test'
 POSTS_ROUTE = '/posts'
+ABOUT_ROUTE = '/about'
 
 
 app = Flask(__name__)
@@ -38,3 +39,14 @@ class Posts(Resource):
     """
     def get(self):
         return fetch()
+
+
+@api.route(ABOUT_ROUTE)
+class About(Resource):
+    """
+    *** UNDER DEVELOPMENT - NOT READY FOR PROD USE ***
+
+    Responds with about page.
+    """
+    def get(self):
+        return http_client.OK
