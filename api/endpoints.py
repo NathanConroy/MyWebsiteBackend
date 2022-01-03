@@ -9,7 +9,7 @@ from flask_restx import Resource, Api
 from flask_cors import CORS
 from flask import Flask
 
-from posts.fetch import fetch
+from content.fetch import fetch
 
 
 TEST_ROUTE = '/test'

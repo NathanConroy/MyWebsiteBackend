@@ -4,7 +4,7 @@ Tests the fetch module.
 
 import copy
 
-import posts.fetch as ft
+import content.fetch as ft
 
 
 TEST_POST = {

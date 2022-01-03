@@ -6,12 +6,13 @@ import pathlib
 import yaml
 
 TITLE = 'TITLE'
-FILES_DIR = './posts/files'
+FILES_DIR = './content/files'
 
 ID = 'id'
 ACTIVE = 'active'
 AUTHOR = 'author'
 DATE = 'date'
+# TODO: change name from 'content' (now used as the name for this pkg)
 CONTENT = 'content'
 
 
