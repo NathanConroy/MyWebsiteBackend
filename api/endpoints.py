@@ -9,7 +9,7 @@ from flask_restx import Resource, Api
 from flask_cors import CORS
 from flask import Flask
 
-from content.fetch import fetch_posts
+from content.fetch import fetch_posts, fetch_about
 
 
 TEST_ROUTE = '/test'
@@ -49,4 +49,4 @@ class About(Resource):
     Responds with about page.
     """
     def get(self):
-        return http_client.OK
+        return fetch_about()

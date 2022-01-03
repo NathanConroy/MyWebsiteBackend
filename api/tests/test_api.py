@@ -18,6 +18,7 @@ def test_posts(client):
     resp = client.get(ep.POSTS_ROUTE)
     assert resp.status_code == http_client.OK
 
+
 def test_about(client):
     """
     Tests that we can retreive about page.
