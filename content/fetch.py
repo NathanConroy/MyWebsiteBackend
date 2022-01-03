@@ -2,11 +2,12 @@
 Fetches Blog posts.
 """
 
-import pathlib
+import pathlib as pl
 import yaml
 
 TITLE = 'TITLE'
 POSTS_DIR = './content/posts'
+ABOUT_PAGE = './content/about.yml'
 
 ID = 'id'
 ACTIVE = 'active'
@@ -16,15 +17,19 @@ DATE = 'date'
 CONTENT = 'content'
 
 
-def fetch_posts():
+def fetch_posts() -> list:
     posts = []
-    for f in pathlib.Path(POSTS_DIR).iterdir():
+    for f in pl.Path(POSTS_DIR).iterdir():
         if f.is_file():
             _add_post(_parse_file(f), posts)
     return posts
 
 
-def _parse_file(file: pathlib.Path):
+def fetch_about() -> dict:
+    return _parse_file(pl.Path(ABOUT_PAGE))
+
+
+def _parse_file(file: pl.Path) -> dict:
     return yaml.safe_load(
         file.read_text()
     )

@@ -34,11 +34,18 @@ def get_test_post(post):
     return copy.deepcopy(post)
 
 
-def test_fetch():
+def test_fetch_posts():
     """
     Test fetching posts.
     """
     assert isinstance(ft.fetch_posts(), list)
+
+
+def test_fetch_about():
+    """
+    Test fetching about page.
+    """
+    assert isinstance(ft.fetch_about(), dict)
 
 
 def test_is_active():
