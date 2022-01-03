@@ -38,7 +38,7 @@ def test_fetch():
     """
     Test fetching posts.
     """
-    assert isinstance(ft.fetch(), list)
+    assert isinstance(ft.fetch_posts(), list)
 
 
 def test_is_active():

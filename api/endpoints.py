@@ -9,7 +9,7 @@ from flask_restx import Resource, Api
 from flask_cors import CORS
 from flask import Flask
 
-from content.fetch import fetch
+from content.fetch import fetch_posts
 
 
 TEST_ROUTE = '/test'
@@ -38,7 +38,7 @@ class Posts(Resource):
     Responds with all the blog's posts.
     """
     def get(self):
-        return fetch()
+        return fetch_posts()
 
 
 @api.route(ABOUT_ROUTE)

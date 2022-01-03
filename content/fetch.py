@@ -16,7 +16,7 @@ DATE = 'date'
 CONTENT = 'content'
 
 
-def fetch():
+def fetch_posts():
     posts = []
     for f in pathlib.Path(FILES_DIR).iterdir():
         if f.is_file():
