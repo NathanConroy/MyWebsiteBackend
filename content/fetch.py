@@ -6,7 +6,7 @@ import pathlib
 import yaml
 
 TITLE = 'TITLE'
-FILES_DIR = './content/files'
+POSTS_DIR = './content/posts'
 
 ID = 'id'
 ACTIVE = 'active'
@@ -18,7 +18,7 @@ CONTENT = 'content'
 
 def fetch_posts():
     posts = []
-    for f in pathlib.Path(FILES_DIR).iterdir():
+    for f in pathlib.Path(POSTS_DIR).iterdir():
         if f.is_file():
             _add_post(_parse_file(f), posts)
     return posts
