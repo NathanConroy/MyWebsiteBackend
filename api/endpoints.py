@@ -9,7 +9,7 @@ from flask_restx import Resource, Api
 from flask_cors import CORS
 from flask import Flask
 
-from content.fetch import fetch_posts, fetch_about
+import content.fetch as ft
 
 
 TEST_ROUTE = '/test'
@@ -38,15 +38,13 @@ class Posts(Resource):
     Responds with all the blog's posts.
     """
     def get(self):
-        return fetch_posts()
+        return ft.fetch_posts()
 
 
 @api.route(ABOUT_ROUTE)
 class About(Resource):
     """
-    *** UNDER DEVELOPMENT - NOT READY FOR PROD USE ***
-
     Responds with about page.
     """
     def get(self):
-        return fetch_about()
+        return ft.fetch_about()
