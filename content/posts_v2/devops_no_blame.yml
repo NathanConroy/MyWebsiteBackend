@@ -3,13 +3,14 @@ active: true
 author: Nathan Conroy
 date: '2022-01-05'
 title: DevOps - No Blame
-content: |
-    In my view, DevOps is - at its heart - a self-concious strategy which is defined by a mind towards continual improvement. It accepts that mistakes happen. It teaches that things are sub-optimal now. What it is about is learning from mistakes and bettering one's self and one's company.
+content:
+    text: |
+        In my view, DevOps is - at its heart - a self-concious strategy which is defined by a mind towards continual improvement. It accepts that mistakes happen. It teaches that things are sub-optimal now. What it is about is learning from mistakes and bettering one's self and one's company.
 
-    In this view, DevOps practitioners encourage a principle of "no blame." That is, if someone makes a mistake, we should not punish him. Rather, we should learn what circumstances made it easy for such a mistake to occur, then improve those circumstances so that such a mistake is more difficult to make in the future.
+        In this view, DevOps practitioners encourage a principle of "no blame." That is, if someone makes a mistake, we should not punish him. Rather, we should learn what circumstances made it easy for such a mistake to occur, then improve those circumstances so that such a mistake is more difficult to make in the future.
 
-    Blame and punishment for mistakes is, in fact, often counterproductive. It stifles experimentation and creativity - as experimentation is a risky activity. It makes it difficult to diagnose the root causes of problems - for fear of retribution. It also might simply petrify workers and keep them from taking effective action - as all effective action is responsible action and all responsible action is *liable* action.
+        Blame and punishment for mistakes is, in fact, often counterproductive. It stifles experimentation and creativity - as experimentation is a risky activity. It makes it difficult to diagnose the root causes of problems - for fear of retribution. It also might simply petrify workers and keep them from taking effective action - as all effective action is responsible action and all responsible action is *liable* action.
 
-    There is an obvious exception to this "no blame" priciple: If someone in a company makes a "mistake," and this "mistake" turns out to be done with intentional malice or gross neglegence. Of course, in this case, the company's way to improve itself is to fire or otherwise discipline the worker.
+        There is an obvious exception to this "no blame" priciple: If someone in a company makes a "mistake," and this "mistake" turns out to be done with intentional malice or gross neglegence. Of course, in this case, the company's way to improve itself is to fire or otherwise discipline the worker.
 
-    In this way, whether to blame or not to blame an individual or group within a company, DevOps reminds us that "improvement" is the guiding priciple for rectifying failure.
+        In this way, whether to blame or not to blame an individual or group within a company, DevOps reminds us that "improvement" is the guiding priciple for rectifying failure.
