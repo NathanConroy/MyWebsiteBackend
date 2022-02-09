@@ -1,0 +1,31 @@
+id: 1
+active: false
+author: Nathan Conroy
+date: '2021-09-19'
+title: Paper Driven Development
+content: |
+    Summary: Computers are powerful tools. So powerful, it is easy to become distracted while using them. To use them effectively, I propose limiting computer interaction to plans we've first committed to paper.
+
+    Intro:
+
+    Computers have made many tasks easy. With them, we may compute vast sums, see and hear the goings-on of things around the world, interact with all our loved-ones, purchase anything, etc. To do these things, we merely type and click - hardly burning a calorie. Has anything given people such reward for so little effort? I don't think so.
+
+    This is a new thing in history. In the past, people had to carefully calculate sums by hand. They had travel to buy things and to see places, friends, and family. To hope for any reward at all, more effort had to be expended. And this required, high effort had several important effects.
+
+    1. Greater caution, thought, and reflection had to be invested before action. The greater cost of action, the more we have to ask ourselves, "Is this really valuable to me", "Is this really this best way to go about it"? And the bigger the action, the more we have to count the cost.
+
+        This is not to say that *all action was decided deliberately. Many actions were and are routine - such as brushing your teeth in the morning.
+
+    2. As a corollary to this, value of the results of action were understood better.
+
+    Obviously, computers are a great value to us, they make our lives easier. But it is my belief that this ease should not come at the expense of reflective thought. We should not waste our time repeatedly refreshing some social media site. Rather we should treat computers with the respect we give other powerful tools. We do not operate a chainsaw without first deliberating on it's use. We do not drive a car without a specific purpose.
+
+    Paper Driven Development:
+
+    To combat the allure of computers, I propose a 
+
+    1. Write intentions on paper until no more productive thought can be done.
+    2. Write code until paper-thoughts are realized in a computer. Then go back
+       to 1.
+
+    
