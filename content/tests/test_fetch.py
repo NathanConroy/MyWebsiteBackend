@@ -41,6 +41,13 @@ def test_fetch_posts():
     assert isinstance(ft.fetch_posts(), list)
 
 
+def test_fetch_posts_v2():
+    """
+    Test fetching posts.
+    """
+    assert isinstance(ft.fetch_posts(version=ft.V2), list)
+
+
 def test_fetch_about():
     """
     Test fetching about page.
