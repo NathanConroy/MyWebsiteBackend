@@ -5,9 +5,9 @@ This module contains all the server's endpoints.
 
 import http.client as http_client
 
+import flask
 from flask_restx import Resource, Api
 from flask_cors import CORS
-from flask import Flask
 
 import content.fetch as ft
 
@@ -22,7 +22,7 @@ ABOUT_ROUTE = '/about'
 VERSION = 'version'
 
 
-app = Flask(__name__)
+app = flask.Flask(__name__)
 CORS(app)
 api = Api(app)
 
@@ -42,7 +42,12 @@ class Posts(Resource):
     """
     Responds with all the blog's posts.
     """
+    @api.doc(params={VERSION: 'A version id.'})
     def get(self):
+        if version := flask.request.args.get(VERSION):
+            return ft.fetch_posts(
+                version=version
+            )
         return ft.fetch_posts()
 
 

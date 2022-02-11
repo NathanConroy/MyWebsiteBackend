@@ -15,8 +15,8 @@ DATE = 'date'
 CONTENT = 'content'
 
 # Post Versions
-V1 = 1
-V2 = 2
+V1 = 'v1'
+V2 = 'v2'
 
 V1_POSTS_DIR = './content/posts'
 V2_POSTS_DIR = './content/posts_v2'
