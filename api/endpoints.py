@@ -12,9 +12,14 @@ from flask import Flask
 import content.fetch as ft
 
 
+# Routes
 TEST_ROUTE = '/test'
 POSTS_ROUTE = '/posts'
 ABOUT_ROUTE = '/about'
+
+
+# Params
+VERSION = 'version'
 
 
 app = Flask(__name__)
