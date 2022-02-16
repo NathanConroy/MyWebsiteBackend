@@ -3,8 +3,9 @@ active: true
 author: Nathan Conroy
 date: '2022-01-05'
 title: DevOps - No Blame
-content:
-    text: |
+sections:
+    - type: text
+      content: |
         In my view, DevOps is - at its heart - a self-concious strategy which is defined by a mind towards continual improvement. It accepts that mistakes happen. It teaches that things are sub-optimal now. What it is about is learning from mistakes and bettering one's self and one's company.
 
         In this view, DevOps practitioners encourage a principle of "no blame." That is, if someone makes a mistake, we should not punish him. Rather, we should learn what circumstances made it easy for such a mistake to occur, then improve those circumstances so that such a mistake is more difficult to make in the future.

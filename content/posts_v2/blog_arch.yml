@@ -3,8 +3,9 @@ active: false
 author: Nathan Conroy
 date: '2021-09-21'
 title: Third post.
-content:
-    text: |
+sections:
+    - type: text
+      content: |
         This is my second post.
 
         Another line.

@@ -3,8 +3,9 @@ active: false
 author: Nathan Conroy
 date: '2021-09-19'
 title: Paper Driven Development
-content:
-    text: |
+sections:
+    - type: text
+      content: |
         Summary: Computers are powerful tools. So powerful, it is easy to become distracted while using them. To use them effectively, I propose limiting computer interaction to plans we've first committed to paper.
 
         Intro:

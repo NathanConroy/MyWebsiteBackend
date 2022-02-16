@@ -3,8 +3,9 @@ active: true
 author: Nathan Conroy
 date: '2021-12-19'
 title: About this Blog
-content:
-    text: |
+sections:
+    - type: text
+      content: |
         Welcome!
 
         This is a blog of meditations on software engineering matters.
