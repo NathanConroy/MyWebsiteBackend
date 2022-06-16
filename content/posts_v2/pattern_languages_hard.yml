@@ -1,0 +1,17 @@
+id: 5
+active: false
+author: Nathan Conroy
+date: '2022-06-xx'
+title: Difficulty of Pattern Languages
+sections:
+    - type: text
+      content: |-
+        One of my favorite books is Christopher Alexander's The Timeless Way of Building. It's a beautiful, awe-inspiring book about design. Its thesis is simple: Good design is made of identifiable, repeatable patterns. These patterns aren't stagnant, but living and fractal-like.
+
+        He illustrates his thesis with many examples drawn from building architecture and city planning, but it's easy to apply his insights to almost any human endevor. This includes software development.
+
+        About these rules, Alexander asks "You may wonder--if the rules are so simple to express--what is there that makes a builder great?" To which he responds "And indeed, there is an answer. Even though the rules are simple, by the time you have twenty, perhaps fifty rules like this in your mind, it takes almost inhuman singleness of purpose to insist on them--not to let go of them." And he elaborates, "It is so easy to say--oh well, it is too hard to have light on two sides of this room, and that room--at the same time as all other things we are trying to do. It will be alright if we allow this room to have light on just one side. The fact is that it will not be alright. But to insist, to keep all the rules which matter, freely in your mind, and not to let go of them--that does perhaps require unusual character of purpose."
+
+        This is much like programming. There are many rules-of-thumb for writing a good program. Here are a few - (1) functions should be short, (2) names of things shouldn't be any longer than they need to be, (3) code should be cohesive.
+
+        For all these things, 
