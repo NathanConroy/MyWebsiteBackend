@@ -1,0 +1,19 @@
+id: 5
+active: false
+author: Nathan Conroy
+date: '2022-07-18'
+title: Who are your Clients?
+sections:
+    - type: text
+      content: |-
+        Like all writers, a programmer must ask "Who am I writing for?" Often there are multiple audiences which the developer must take into consideration.
+
+        THE END USER: Will my changes satisfy the user of my software?
+
+        FUTURE DEVS: Is your code clear and easy to modify for future developers on your project? That list of future developers includes you!
+
+        THE ORGANIZATION: It's not only the customers and software developers who need good code. Every worthwhile change to software, improves the business or organization which owns that software.
+
+        YOURSELF (NOW): Code isn't just a result. It's a process. Does your code that you are currently writing clarify your thinking about a problem?
+
+        It is not easy to properly write for all the clients who will use it. Yet good programers take into account all of their audiences at once. I will write a series of posts describing these points in detail. This in turn will introduce a longer discussion of the traits of good software.
