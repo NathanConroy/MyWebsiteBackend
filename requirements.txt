@@ -1,4 +1,4 @@
-flask==1.1.4
+flask
 flask-restx
 flask-cors
 pytest
