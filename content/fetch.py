@@ -41,9 +41,9 @@ def fetch_about() -> dict:
     return _parse_file(pl.Path(ABOUT_PAGE))
 
 
-def _parse_file(file: pl.Path) -> dict:
+def _parse_file(f: pl.Path) -> dict:
     return yaml.safe_load(
-        file.read_text()
+        f.read_text()
     )
 
 
