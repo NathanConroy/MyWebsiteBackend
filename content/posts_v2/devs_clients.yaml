@@ -1,19 +1,19 @@
 id: 5
-active: false
+active: true
 author: Nathan Conroy
-date: '2022-07-18'
-title: Who are your Clients?
+date: '2022-07-25'
+title: Who is Your Audience?
 sections:
     - type: text
       content: |-
         Like all writers, a programmer must ask "Who am I writing for?" Often there are multiple audiences which the developer must take into consideration.
 
-        THE END USER: Will my changes satisfy the user of my software?
+        THE END USER: Will your changes satisfy the users of your software?
 
         FUTURE DEVS: Is your code clear and easy to modify for future developers on your project? That list of future developers includes you!
 
-        THE ORGANIZATION: It's not only the customers and software developers who need good code. Every worthwhile change to software, improves the business or organization which owns that software.
+        THE ORGANIZATION: Even non-devs and non-end-users benefit from good code. Does your code allow the organization to quickly change its product? Does the terminology in the code base match the terminology that the managers and sales team use? If not, the teams in the organzation may have a hard time understanding each other.
 
         YOURSELF (NOW): Code isn't just a result. It's a process. Does your code that you are currently writing clarify your thinking about a problem?
 
-        It is not easy to properly write for all the clients who will use it. Yet good programers take into account all of their audiences at once. I will write a series of posts describing these points in detail. This in turn will introduce a longer discussion of the traits of good software.
+        It is not easy to properly write for all the clients who will use it. Yet good programers take into account all of their audiences at once. I will write a series of posts elaborating on these ideas. This in turn will introduce a longer discussion of the traits of good software.
