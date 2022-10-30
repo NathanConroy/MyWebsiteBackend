@@ -30,19 +30,21 @@ VERSION_DIR = {
 
 def fetch_posts(version=V1) -> list:
     posts = []
-    posts_dir = VERSION_DIR[version]  # TODO: raise error if no version
-    for f in _iter_files_in_dir(posts_dir):
-        if f.is_file():
-            _add_post(_parse_file(f), posts)
+    for f in _iter_post_files(version):
+        _add_post(_parse_file(f), posts)
     return posts
 
 
 def fetch_post(post_id, version=V1) -> typ.Optional[dict]:
-    posts_dir = VERSION_DIR[version]  # TODO: raise error if no version
-    for f in _iter_files_in_dir(posts_dir):
-        if f.is_file() and _file_matches_id(f, post_id):
+    for f in _iter_post_files(version):
+        if _file_matches_id(f, post_id):
             return _parse_file(f)
     return None
+
+
+def _iter_post_files(version):
+    posts_dir = VERSION_DIR[version] # TODO: handle error if no version
+    yield from filter(lambda f: f.is_file(), _iter_files_in_dir(posts_dir))
 
 
 def _iter_files_in_dir(directory):
