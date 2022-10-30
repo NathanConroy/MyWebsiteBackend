@@ -34,4 +34,3 @@ def test_about(client):
     """
     resp = client.get(ep.ABOUT_ROUTE)
     assert resp.status_code == http_client.OK
-

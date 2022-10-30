@@ -1,7 +1,7 @@
 """
 Fetches Blog posts.
 """
-
+import typing as typ
 import pathlib as pl
 import yaml
 
@@ -35,6 +35,19 @@ def fetch_posts(version=V1) -> list:
         if f.is_file():
             _add_post(_parse_file(f), posts)
     return posts
+
+
+def fetch_post(fid, version=V1) -> typ.Optional[dict]:
+    posts_dir = VERSION_DIR[version]  # TODO: raise error if no version
+    for f in pl.Path(posts_dir).iterdir():
+        if f.is_file() and _file_matches_id(f, fid):
+            return _parse_file(f)
+    return None
+
+
+def _file_matches_id(f, fid):
+    file_dict = _parse_file(f)
+    return fid == file_dict[ID]
 
 
 def fetch_about() -> dict:

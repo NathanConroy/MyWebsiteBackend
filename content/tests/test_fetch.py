@@ -26,6 +26,8 @@ INACT_TEST_POST = {
     ft.CONTENT: "Test post content."
 }
 
+ID_OF_POST_IN_DB = 1
+
 
 def get_test_post(post):
     """
@@ -43,9 +45,25 @@ def test_fetch_posts():
 
 def test_fetch_posts_v2():
     """
-    Test fetching posts.
+    Test fetching v2 posts.
     """
     assert isinstance(ft.fetch_posts(version=ft.V2), list)
+
+
+def test_fetch_post():
+    """
+    Test fetching a single post.
+    """
+    res = ft.fetch_post(ID_OF_POST_IN_DB)
+    assert isinstance(res, dict)
+
+
+def test_fetch_post_v2():
+    """
+    Test fetching a single v2 post.
+    """
+    res = ft.fetch_post(ID_OF_POST_IN_DB, version=ft.V2)
+    assert isinstance(res, dict)
 
 
 def test_fetch_about():
